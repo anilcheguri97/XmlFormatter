@@ -80,12 +80,12 @@ public class UpdateXml {
 
     }
 
-    public static String getTimeFormat(String date) {
-        System.out.println("date is "+date);
-        String newdate = (String) date.subSequence(8, 28);
+    public static String getTimeFormat(String newdate) {
+        System.out.println("newdate is "+newdate);
+        //String newdate = (String) newdate.substring(0,10);
         newdate = newdate.replace('T', ' ');
         newdate = newdate.replace('-', '/');
-        System.out.println("new date is "+newdate);
+        System.out.println("new newdate is "+newdate);
         String year = newdate.substring(0,4);
         System.out.println("year "+year);
         String month =  newdate.substring(5,7);
